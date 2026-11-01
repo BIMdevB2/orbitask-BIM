@@ -6,8 +6,8 @@ on:
   push:
     branches: [main]
 jobs:
-  verifier: # nom du "check" qui apparaitra sur les PR
-    runs-on: ubuntu-latest # une machine Linux toute neuve, fournie par GitHub
+  verifier:                      # nom du "check" qui apparaitra sur les PR
+    runs-on: ubuntu-latest       # une machine Linux toute neuve, fournie par GitHub
     steps:
       - name: Recuperer le code du depot
         uses: actions/checkout@v5
